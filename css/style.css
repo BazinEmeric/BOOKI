@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0px;
 }
 
 .main-container {
@@ -56,6 +57,38 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+/****** Header ***********/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    height: 79px;
+}
+#logoBooki{
+    padding: 30px 50px 30px 50px;
+    width: 61px;
+    height: 19px;
+
+}
+menu{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+    padding: 0px 50px ;
+    gap: 68px;
+    height: 35px;
+}
+.lienmenu{
+ padding: 16px 0px 0px 0px;
+ font-size: 16px;
+}
+.lienmenu:hover{
+    padding: 14px 0px 0px 0px;
+    border-top: 2px solid var(--main-color);
+    color: var(--main-color);
 }
 
 /****** Hebergements And Populaires ***********/
