@@ -169,6 +169,7 @@ display: none;
     display:flex;
     justify-content: flex-start;
     width:758px;
+    height: 50px;
     gap: 20px;
 }
 
@@ -205,6 +206,33 @@ display: none;
 .fa-filtres{
     font-size: 22px;
     width: 22px;
+}
+
+/**** Infobar *********/
+
+.infobar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    gap: 10px;
+}
+
+.fa-info{
+    position: relative;
+    width: 4px;
+    left: 9px;
+    top: 5px;
+}
+
+.info-icon{
+    flex: 0 0 22px;
+    height: 22px;
+    font-size: 10px;
+    border: 1px solid var(--filter-bd-color);
+    border-radius: 25px;
+    position: relative;
 }
 
 
@@ -327,7 +355,9 @@ display: none;
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .lienmenu:active{
+    .lienmenu:active,
+    .lienmenu:hover,
+    .lienmenu:focus{
     padding: 0px 0px 14px 0px;
     border-top: none;
     border-bottom: 2px solid var(--main-color);
