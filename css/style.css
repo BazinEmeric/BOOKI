@@ -7,6 +7,7 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --filter-bd-color: #d9d9d9;
 }
 
 .fa-solid {
@@ -92,6 +93,7 @@ menu{
 }
 
 /****** introduction ***********/  
+/**** Titres *********/  
 .introduction{
     margin-top: 30px;
     display: flex;
@@ -106,6 +108,7 @@ H1{
     font-size: 16px;
     margin: 8x 0px 0px 0px;
 }
+/**** barre de recherche *********/  
 .search-bar{
     display: flex;
     justify-content: stretch;
@@ -158,6 +161,49 @@ H1{
 }
 .fas{
 display: none;
+}
+
+/**** Filtres *********/
+
+.area-filtres{
+    display:flex;
+    justify-content: flex-start;
+    width:758px;
+    gap: 20px;
+}
+
+.Title-filtres{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.area-Btn-filtres{
+    display:flex;
+    justify-content: flex-start;
+    gap: 15px
+}
+
+.Btn-filtres{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px 25px 25px 25px;
+    background-color: white;
+    border: 2px solid var(--filter-bd-color);
+    font-weight: bold;
+    height: 50px;
+    gap: 10px;
+    padding: 0 17px 0 17px;
+    font-size: 17px;
+}
+
+.Btn-filtres:hover{
+    background-color: var(--filter-bg-color);
+}
+
+.fa-filtres{
+    font-size: 22px;
+    width: 22px;
 }
 
 
@@ -262,20 +308,36 @@ display: none;
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .area-filtres{
+        width: 668px;
+        flex-direction: column;
+        gap: 20px;
+        height: 91px;
+    }
+    .Title-filtres{
+        margin:0;
+    }
+
+    .Btn-filtres{
+        font-size: 16px;
+        text-wrap: nowrap;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .lienmenu:focus{
+    .lienmenu:active{
     padding: 0px 0px 14px 0px;
     border-top: none;
     border-bottom: 2px solid var(--main-color);
-    color: #0065FC;
+    color: var(--main-color);
     }
     .lienmenu{
         width: 50%;
         text-align: center;
         padding: 0px 0px 16px 0px;
+        border-bottom: 2px solid var(--main-bg-color);
     }
     header{
         flex-direction: column;
@@ -309,5 +371,27 @@ display: none;
         display: initial;
         font-size: 18px;
         color: white;
+    }
+
+    .Btn-filtres:focus{
+        background-color: var(--filter-bg-color);
+    }
+    .Btn-filtres{
+        width: calc(50% - 5px);
+        font-size: 14px;
+        justify-content: flex-start;
+    }
+
+    .area-filtres{
+        width: 100%;
+        gap: 20px;
+        height: 161px;
+    }
+
+    .area-Btn-filtres{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 10px;
     }
 }
