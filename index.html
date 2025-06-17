@@ -19,8 +19,8 @@
         <header>
             <img src="./images/logo/Booki.png" alt="Logo de Booki" id="logoBooki">
             <menu>
-                <a href="#linkhebergements" class="lienmenu">Hébergements</a>
-                <a href="#linkactivites" class="lienmenu">Activités</a>
+                <a href="#linkaccommodation" class="link-menu">Hébergements</a>
+                <a href="#linkactivities" class="link-menu">Activités</a>
             </menu>
         </header>
         <main>
@@ -39,23 +39,23 @@
                         <span id="search-text">Rechercher</span>
                     </button>
                 </form>
-                <div class="area-filtres">
-                    <p class="Title-filtres">Filtres</p>
-                    <div class="area-Btn-filtres">
-                        <button class="Btn-filtres">
-                            <i class="fa-solid fa-money-bill-wave fa-filtres"></i>
+                <div class="area-filter">
+                    <p class="Title-filter">Filtres</p>
+                    <div class="area-Btn-filter">
+                        <button class="Btn-filter">
+                            <i class="fa-solid fa-money-bill-wave iconfilter"></i>
                             <p>Économique</p>
                         </button>
-                        <button class="Btn-filtres">
-                            <i class="fa-solid fa-person fa-filtres"></i>
+                        <button class="Btn-filter">
+                            <i class="fa-solid fa-person iconfilter"></i>
                             <p>Familial</p>
                         </button>
-                        <button class="Btn-filtres">
-                            <i class="fa-solid fa-heart fa-filtres"></i>
+                        <button class="Btn-filter">
+                            <i class="fa-solid fa-heart iconfilter"></i>
                             <p>Romantique</p>
                         </button>
-                        <button class="Btn-filtres">
-                            <i class="fa-solid fa-fire fa-filtres"></i>
+                        <button class="Btn-filter">
+                            <i class="fa-solid fa-fire iconfilter"></i>
                             <p>Nos pépites</p>
                         </button>
                     </div>
@@ -65,10 +65,10 @@
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </section>
-            <div class="hebergements-and-populaires">
-                <section class="hebergements" id="linkhebergements" >
+            <div class="accommodation-and-popular">
+                <section class="accommodation" id="linkaccommodation" >
                     <h2 class="section-title">Hébergements à Marseille</h2>
-                    <div class="hebergements-cards">
+                    <div class="accommodation-cards">
                         <a href="#" class="container-card">
                             <article class="card">
                                 <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -175,12 +175,12 @@
                     </div>
                     <a href="#" class="link-afficher">Afficher plus</a>
                 </section>
-                <section class="populaires">
-                    <div class="populaires-title">
+                <section class="popular">
+                    <div class="popular-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
-                    <div class="populaires-cards">
+                    <div class="popular-cards">
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -241,9 +241,9 @@
                     </div>
                 </section>
             </div>
-            <section class="activites" id="linkactivites">
+            <section class="activities" id="linkactivities">
                 <h2 class="section-title">Activités à Marseille</h2>
-                <div class="container-activites">
+                <div class="container-activities">
                     <a href="#">
                         <article class="card">
                             <img src="images/activites/reno-laithienne.jpg" alt="Photo du Vieux -Port">
@@ -271,8 +271,44 @@
                 </div>
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            <div class="menu-footer">
+                <h3 class="footer-title">À propos</h3>
+                <ul>
+                    <a href="#">
+                        <li>Fonctionnement du site</li>
+                    </a>
+                    <a href="#">
+                        <li>Conditions générales </li>
+                    </a>
+                    <a href="#">
+                        <li>Données et confidentialité</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="menu-footer">
+                <h3 class="footer-title">Nos hébergements</h3>
+                <ul>
+                    <a href="#">
+                        <li>Charte qualité</li>
+                    </a>
+                    <a href="#">
+                        <li>Proposer votre hôtel</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="menu-footer">
+                <h3 class="footer-title">Assistance</h3>
+                <ul>
+                    <a href="#">
+                        <li>Centre d’aide</li>
+                    </a>
+                    <a href="#">
+                        <li>Nous contacter</li>
+                    </a>
+                </ul>
+            </div>
+        </footer>
     </div>
 </body>
-
 </html>
