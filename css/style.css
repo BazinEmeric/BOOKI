@@ -357,6 +357,47 @@ display: none;
     margin-bottom: 5px;
 }
 
+/****** Activités ***********/
+
+.activites{
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.activites .section-title{
+    padding-bottom: 30px;
+    height: 30.02px;
+}
+
+.container-activites{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.activites a{
+    width: calc(25% - 22.5px);
+    height: 439px;
+}
+
+.activites .card{
+    padding: 0;
+    height: 100%;
+}
+
+.activites .card img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 380px;
+}
+
+.activites .card-title{
+    display: flex;
+    padding-left:20px;
+    margin: 0;
+    align-items:center;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -385,7 +426,7 @@ display: none;
         gap: 20px;
     }
 
-    .populaires-cards a {
+    .populaires-cards a{
         flex: 1;
     }
 
@@ -414,6 +455,18 @@ display: none;
     .Btn-filtres{
         font-size: 16px;
     }
+}
+
+.activites a{
+    height: 270px;
+}
+
+.activites .card-title{
+    height: 70px;
+}
+
+.activites .card img{
+    height: 200px;
 }
 
 /* Small devices (phones, less than 768px) */
@@ -541,4 +594,22 @@ display: none;
         flex-wrap: wrap;
         column-gap: 10px;
     }
+
+    .container-activites{
+        flex-direction: column;
+        gap : 15px;
+    }
+
+    .activites a{
+        width: 100%;
+        height: 200px;
+    }
+
+    .activites .card img{
+        height: 141px;
+    }
+
+    .activites .card-title{
+    padding: 20px 19px 20px 19px;
+}
 }
