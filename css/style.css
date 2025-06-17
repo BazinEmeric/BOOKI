@@ -86,7 +86,9 @@ menu{
     padding: 0px;
     gap: 68px;
     height: 35px;
+    list-style-type: none;
 }
+
 .link-menu{
  padding: 16px 0px 0px 0px;
  font-size: 16px;
@@ -112,7 +114,8 @@ H1{
 }
 #subtitle{
     font-size: 16px;
-    margin-top: 8x;
+    margin-top: 8px;
+    margin-bottom: 0;
 }
 /**** search-bar *********/  
 .search-bar{
